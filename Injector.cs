@@ -17,6 +17,10 @@ namespace DI
         private Dictionary<Type, Type> bindings = new Dictionary<Type, Type>();
         private Dictionary<Type, ConstructorInfo> constructors = new Dictionary<Type, ConstructorInfo>();
 
+        private Injector()
+        {
+        }
+
         public static Injector CreateInstance()
         {
             if (injector == null)
